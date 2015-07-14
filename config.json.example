@@ -1,0 +1,12 @@
+{
+	"token":"tocken",
+	"domain":"hostname",
+	"dns":{
+		"normal":{
+			"ip": "0.0.0.0"
+		},
+		"recovery":{
+			"ip":"0.0.0.0"
+		}
+	}
+}
