@@ -1,0 +1,6 @@
+#!/bin/bash
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM$
+
+cd /home/osuser/pdd_ya_updater
+ruby updater.rb
