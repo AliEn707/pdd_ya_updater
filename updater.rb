@@ -31,10 +31,10 @@ def update_dns(ip, config)
 	p ans["success"]
 end
 
-req = Net::HTTP::Get.new("/")
+req = Net::HTTP::Get.new("/ping")
 
 begin
-	res = Net::HTTP.start(config["dns"]["normal"]["ip"], 3000, open_timeout: 10) do |http|
+	res = Net::HTTP.start(config["dns"]["normal"]["ip"], 80, open_timeout: 10) do |http|
 		http.request(req)
 	end
 	#main machine works
