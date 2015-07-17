@@ -44,7 +44,7 @@ begin
 	end
 rescue Exception => e
 	#machine not works
-	if (config["dns"]["normal"]["ip"]==ip) then
+	if (config["dns"]["recovery"]["ip"]!=ip) then
 		#need to change
 		update_dns(config["dns"]["recovery"]["ip"], config)
 	end
